@@ -1,7 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
+
+
+version = "1.0.0-beta.1"
 
 android {
     namespace = "com.digia.cleverTap"
@@ -9,7 +13,6 @@ android {
 
     defaultConfig {
         minSdk = 35
-        targetSdk = 36
     }
 
     compileOptions {
@@ -24,5 +27,18 @@ android {
 
 dependencies {
     implementation(libs.clevertap.android.sdk)
-    implementation(libs.digia.ui)
+    implementation(libs.digia.ui.compose)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from(components["release"])
+                groupId = "com.digia"
+                artifactId = "clevertap"
+                version = version
+            }
+        }
+    }
 }

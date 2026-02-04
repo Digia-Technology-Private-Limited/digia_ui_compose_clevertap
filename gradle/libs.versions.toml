@@ -1,0 +1,13 @@
+[versions]
+agp = "8.13.2"
+kotlin = "2.0.21"
+clevertap = "5.0.0"
+digiaUi = "1.0.0-beta.1"
+
+[libraries]
+clevertap-android-sdk = { group = "com.clevertap.android", name = "clevertap-android-sdk", version.ref = "clevertap" }
+digia-ui = { group = "com.digia", name = "digia-ui", version.ref = "digiaUi" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

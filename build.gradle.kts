@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.digia.demo"
+    namespace = "com.digia.cleverTap"
     compileSdk = 36
 
     defaultConfig {

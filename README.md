@@ -1,19 +1,19 @@
-# Digia CleverTap Manager
+# Digia UI Compose CleverTap
 
-This is an Android library that provides a handler for CleverTap Display Units integration with Digia UI Framework.
+This is an Android library that provides a manager for CleverTap Display Units integration with Digia UI Framework.
 
 ## Usage
 
-Initialize the handler in your Application class:
+Initialize the manager in your Application class:
 
 ```kotlin
-DigiaUIClevertapHandler.init(context)
+DigiaUIClevertapManager.init(context)
 ```
 
 Dispose when needed:
 
 ```kotlin
-DigiaUIClevertapHandler.dispose(context)
+DigiaUIClevertapManager.dispose(context)
 ```
 
-The handler will automatically process Display Units from CleverTap and execute commands on the Digia UI Framework.
+The manager will automatically process Display Units from CleverTap and execute commands on the Digia UI Framework.

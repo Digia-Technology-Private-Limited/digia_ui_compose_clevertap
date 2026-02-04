@@ -1,4 +1,4 @@
-package com.digia.demo
+package com.digia.cleverTap
 
 import com.clevertap.android.sdk.CleverTapAPI
 import com.clevertap.android.sdk.displayunits.DisplayUnitListener
@@ -9,7 +9,7 @@ import java.util.ArrayList
 import kotlin.text.uppercase
 import org.json.JSONObject
 
-object DigiaUIClevertapHandler : DisplayUnitListener {
+object DigiaUIClevertapManager : DisplayUnitListener {
 
     fun init(context: android.content.Context) {
         val cleverTap = CleverTapAPI.getDefaultInstance(context)

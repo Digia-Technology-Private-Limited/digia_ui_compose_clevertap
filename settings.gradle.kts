@@ -15,4 +15,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "digia_clevertap_manager"
+rootProject.name = "digia_ui_compose_clevertap"

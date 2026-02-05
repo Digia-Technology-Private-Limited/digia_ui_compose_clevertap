@@ -5,7 +5,7 @@ plugins {
 }
 
 
-version = "1.0.0-beta.1"
+version = "1.0.0-beta.2"
 
 android {
     namespace = "com.digia.cleverTap"
@@ -39,6 +39,9 @@ afterEvaluate {
                 artifactId = "clevertap"
                 version = version
             }
+        }
+        repositories {
+            mavenLocal()
         }
     }
 }

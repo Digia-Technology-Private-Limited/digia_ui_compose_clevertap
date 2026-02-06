@@ -5,14 +5,14 @@ plugins {
 }
 
 
-version = "1.0.0-beta.2"
+version = "1.0.0-beta.3"
 
 android {
     namespace = "com.digia.cleverTap"
     compileSdk = 36
 
     defaultConfig {
-        minSdk = 35
+        minSdk = 24
     }
 
     compileOptions {

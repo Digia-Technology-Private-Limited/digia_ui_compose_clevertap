@@ -5,14 +5,14 @@ plugins {
 }
 
 
-version = "1.0.0-beta.3"
+version = "1.0.0-beta.4"
 
 android {
     namespace = "com.digia.cleverTap"
     compileSdk = 36
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 25
     }
 
     compileOptions {
@@ -28,6 +28,8 @@ android {
 dependencies {
     implementation(libs.clevertap.android.sdk)
     implementation(libs.digia.ui.compose)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+    implementation("androidx.compose.runtime:runtime:1.7.6")
 }
 
 afterEvaluate {
